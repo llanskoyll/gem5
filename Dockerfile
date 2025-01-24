@@ -28,7 +28,7 @@ RUN apt-get install -y build-essential \
     python3-tk \
     nano 
 
-# move up becase need to install pydot, graphviz
+# NOTICE: Maybe move up
 RUN git clone https://github.com/gem5/gem5
 WORKDIR ./gem5/
 RUN scons build/X86/gem5.opt -j 8
